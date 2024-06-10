@@ -12,7 +12,7 @@ namespace FunctionGenerator
                 [Regexes.Identifier()] = (val) => new IdentifierToken(val)
               , [Regexes.Operator()] = (val) => new OperatorToken(val)
               , [Regexes.OpenParenthesis()] = (val) => new OpenParenthesisToken(val)
-              , [Regexes.CloseParenthesis()] = (val) => new OpenParenthesisToken(val)
+              , [Regexes.CloseParenthesis()] = (val) => new CloseParenthesisToken(val)
               , [Regexes.Literal()] = (val) => new LiteralToken(val)
             };
 
