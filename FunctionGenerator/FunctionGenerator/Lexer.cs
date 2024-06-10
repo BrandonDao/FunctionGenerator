@@ -30,7 +30,7 @@ namespace FunctionGenerator
 
                         if (match.Success)
                         {
-                            tokens.Add(TokenCtorByRegex[regex].Invoke(match.Captures[0].Value));
+                            tokens.Add(TokenCtorByRegex[regex].Invoke(match.Groups[1].Value));
 
                             span = span[match.Length..];
                             goto regexMatchStart;
