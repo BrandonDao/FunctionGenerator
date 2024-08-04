@@ -1,2 +1,2 @@
 # FunctionGenerator
-Math parser that generates an anonymous function for an expression
+Gradient-descent-based math parser that generates a lambda, given a math expression with variables, literals, and operators
